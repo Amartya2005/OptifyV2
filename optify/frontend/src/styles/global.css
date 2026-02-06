@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Markdown Styles */
+.markdown-content h1 { @apply text-3xl font-bold mt-8 mb-4 border-b pb-2; }
+.markdown-content h2 { @apply text-2xl font-semibold mt-6 mb-3; }
+.markdown-content h3 { @apply text-xl font-medium mt-4 mb-2; }
+.markdown-content p { @apply mb-4 leading-relaxed text-gray-800; }
+.markdown-content ul { @apply list-disc list-inside mb-4 ml-4; }
+.markdown-content li { @apply mb-1; }
+.markdown-content a { @apply text-blue-600 underline decoration-blue-300 underline-offset-2; }
+.markdown-content strong { @apply font-bold text-black; }
+.markdown-content blockquote { @apply border-l-4 border-accent pl-4 italic text-gray-600 my-4; }
+
+body {
+    @apply bg-gray-50 text-gray-900;
+}
+
+/* ... keep your existing tailwind directives ... */
+
+/* Custom Thin Scrollbar */
+.custom-scrollbar::-webkit-scrollbar {
+  height: 6px; /* Horizontal scrollbar height */
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #888;
+}
